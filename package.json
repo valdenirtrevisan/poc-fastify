@@ -1,0 +1,37 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts,.js --fix",
+    "generate-types": "openapi-typescript ./swagger.yml --output ./src/types/api.d.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/node": "^24.2.1",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "fastify-openapi-glue": "^4.9.1",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
+    "openapi-typescript": "^7.8.0",
+    "pino-pretty": "^13.1.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "fastify": "^5.4.0",
+    "zod": "^4.0.16"
+  }
+}
